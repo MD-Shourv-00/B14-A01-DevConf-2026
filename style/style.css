@@ -44,6 +44,13 @@
     height: 100vh;
 }
 
+/* common title */
+.common_title{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 50px; 
+}
+
 /* header section start */
 .header .header_contant{
     display: flex;
@@ -113,6 +120,51 @@
     border-radius: 10px;
 }
 /* hero section end */
+
+/* meet the speakers section start */
+
+.speakers {
+    height: auto; 
+}
+.speckers_container .speakers_info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.speckers_container .speakers_info > div{
+    box-shadow: 0px 0px 0px 1px #e5e5e5;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+.speckers_container .speakers_info > div:hover{
+    transform: scale(1.005);
+    box-shadow: 0px 0px 10px #7a7979;
+}
+.speckers_container .speakers_info > div img{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.speckers_container .speakers_info .about_speaker{
+    padding: 20px;
+    text-align: left; 
+}
+.speckers_container .speakers_info .about_speaker :first-child{
+    font-size: 12px;
+    color: #1d4fd8;
+}
+
+.speckers_container .speakers_info .about_speaker :nth-child(2){
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+
+}
+
+.speckers_container .speakers_info .about_speaker :last-child{
+    font-size: 14px;
+    color: #757575;
+}
+/* meet the speakers section end */
 
 
 
