@@ -1,3 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* reset */
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+/* common button start */
+.common_btn{
+    color: white;
+    background: #1d4fd8;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 10px;
+    font-weight: bold;
+    border: 2px solid #1d4fd8;
+    
+}
+.common_btn:hover{
+    transition: color 0.3s ease-out, background 0.3s ease-out;
+    color: #1d4fd8;
+    background:white ;
+    border: 2px solid #1d4fd8;
+}
+/* common button end */
+
+/* common alignment */
+.common_alignment{
+    max-width: 1300px;
+    margin:45px auto;
+}
+
+/* header section start */
+.header .header_contant{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header .header_contant img{
+    height: 44px;
+    width: 134px;
+}
+.header .header_contant nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.header .header_contant nav ul li{
+    list-style: none;
+
+}
+.header .header_contant nav ul li a{
+    font-family: 'arimo';
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #575757;
+}
+.header .header_contant nav ul li a:hover{
+    color: #1d4fd8;
+    border-bottom: 3px solid #1842b691;
+}
+/* header section end */
+
+
