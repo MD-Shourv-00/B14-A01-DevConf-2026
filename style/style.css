@@ -51,6 +51,12 @@
     padding: 50px; 
 }
 
+/* common hr style */
+hr{
+    margin: 20px 0px;
+    border: 1px solid #b3b3b36f;
+}
+
 /* header section start */
 .header .header_contant{
     display: flex;
@@ -138,7 +144,7 @@
 }
 .speckers_container .speakers_info > div:hover{
     transform: scale(1.005);
-    box-shadow: 0px 0px 10px #7a7979;
+    box-shadow: 0px 0px 10px #81a2ff;
 }
 .speckers_container .speakers_info > div img{
     border-top-left-radius: 5px;
@@ -166,6 +172,102 @@
 }
 /* meet the speakers section end */
 
+/* Secure Your Spot start */
+.package_container > p{
+    color: #757575;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: -30px auto 50px;
+}
+.package_container .package_cards_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.package_container .package_cards_container > div{
+    box-shadow: 0px 0px 0px 1px #e5e5e5;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+    padding: 30px;
+   
+}
+.package_container .package_cards_container > div:hover{
+    transform: scale(1.005);
+    box-shadow: 0px 0px 10px #81a2ff;
+}
+.package_container .package_cards_container > div .services{
+    padding-bottom: 20px;
+}
+.package_container .package_cards_container > div li{
+    color: #404040;
+
+}
+.package_container .package_cards_container > div li::marker{
+    color: #1d4fd8;
+}
+
+.package_container .package_cards_container > div p{
+    margin: 15px 0px;
+    color: #757575;   
+}
+.package_container .package_cards_container > div li{
+    margin: 20px;
+    color: #535353;
+}
+
+.package_container .package_cards_container > div .price{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0px;
+}
+.package_container .package_cards_container > div .price{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    margin: 0px;
+}
+.package_container .package_cards_container > div button{
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 400;
+}
+.package_container .package_cards_container > div .card1_btn{
+    color: #1d4fd8;
+    border: 2px solid #1d4fd8;
+    background-color: white;
+}
+.package_container .package_cards_container > div .card3_btn{
+    color: #1c1c1c;
+    border: 2px solid #1c1c1c;
+    background-color: white;
+}
+/* recomended card */
+.package_container .package_cards_container .card2{
+    background-color: rgb(0, 0, 0);
+} 
+/* direct first p */
+.package_container .package_cards_container  .card2  > :first-child{
+    color: #8dacff;
+    font-weight: 600;
+}
+/*  direct 2nd p */
+.package_container .package_cards_container  .card2 > :nth-child(2){
+    color: #e5e5e5;
+}
+/*  direct 3rd p */
+.package_container .package_cards_container  .card2 > :last-child(){
+    color: #b1b1b1;
+}
+.package_container .package_cards_container  .card2 li{
+    color: #e5e5e5e0;
+} 
+
+
+
+
+
+/* Secure Your Spot end */
 
 
 
