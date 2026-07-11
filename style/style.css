@@ -41,7 +41,7 @@
 /* section width and height */
 .section{
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 
 /* common title */
@@ -69,10 +69,12 @@ hr{
     height: 44px;
     width: 134px;
 }
+
 .header .header_contant nav ul{
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
+
 }
 .header .header_contant nav ul li{
     list-style: none;
@@ -96,6 +98,7 @@ hr{
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
+    height: 100vh;
 }
 .hero .overlay {
     background:  linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(14, 110, 179, 0) 100%);
@@ -264,31 +267,214 @@ hr{
 } 
 /* Secure Your Spot end */
 
+
 /* schedule start */
-.schedule_container .schedule_info {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
-.schedule_container .schedule_info .schedule_box{
-    text-align: center;
-    border: 1px solid #9d9d9d;
-    padding: 50px 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+.schedule_container{
+    max-width:1100px;
+    margin:auto;
 }
 
-/* time hover effect */
-.schedule_container .schedule_info :nth-child(odd):hover{
-    background-color:#1d4fd8;
-    color: #ffffff;
-}
-/* evet hover effect */
-.schedule_container .schedule_info :nth-child(even):hover{
-    border-top: 5px solid #1d4fd8 ;
-    border-left: 20px solid #1d4fd8 ;
+.schedule_subtitle{
+    text-align:center;
+    color:#666;
+    margin-top:15px;
+    margin-bottom:40px;
 }
 
+.schedule_day{
+
+    width:fit-content;
+    margin:0 auto 40px;
+
+    background:#1d4fd8;
+    color:#fff;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    font-weight:600;
+    letter-spacing:.5px;
+}
+
+
+/* All rows */
+
+.schedule_info{
+
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+
+}
+
+
+/* Single Row */
+
+.schedule_row{
+
+    display:grid;
+
+    grid-template-columns:220px 1fr;
+
+    gap:20px;
+
+}
+
+
+/* Common Box */
+
+.schedule_box{
+
+    border:1px solid #e7e7e7;
+
+    border-radius:10px;
+
+    transition:.35s;
+
+}
+
+
+/* Time Box */
+
+.schedule_time{
+
+    background:#1d4fd8;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    line-height:1.8;
+
+}
+
+
+/* Event Card */
+
+.schedule_event{
+
+    padding:30px;
+
+    background:white;
+
+}
+
+
+/* Tag */
+
+.event_tag{
+
+    display:inline-block;
+
+    background:#eef3ff;
+
+    color:#1d4fd8;
+
+    padding:6px 16px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+
+/* Title */
+
+.schedule_event h3{
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+    color:#222;
+
+}
+
+
+/* Description */
+
+.schedule_event p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+
+/* Hover */
+
+.schedule_row:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+.schedule_row:hover .schedule_event{
+
+    border-color:#1d4fd8;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+
+.schedule_row:hover .schedule_time{
+
+    background:#163eb0;
+
+}
 /* schedule end */
+
+
+/* footer start */
+ .footer{
+    background-color: #153ca7;
+}
+.footer_container {
+    margin-bottom: 0px;
+    padding: 50px 0px;
+}
+.footer_container .logos{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_container .logos .right_icons{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+} 
+
+.footer_container p{
+    text-align: center;
+    color: rgb(211, 211, 211);
+}
+
+/* hover efect */
+.footer_container a{
+    transition: all 0.2s ease-in;
+}
+.footer_container a:hover{
+    transform: translateY(-3px) ;
+}
+/* footer end */
 
 
 
