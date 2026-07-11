@@ -262,12 +262,36 @@ hr{
 .package_container .package_cards_container  .card2 li{
     color: #e5e5e5e0;
 } 
-
-
-
-
-
 /* Secure Your Spot end */
+
+/* schedule start */
+.schedule_container .schedule_info {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+.schedule_container .schedule_info .schedule_box{
+    text-align: center;
+    border: 1px solid #9d9d9d;
+    padding: 50px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* time hover effect */
+.schedule_container .schedule_info :nth-child(odd):hover{
+    background-color:#1d4fd8;
+    color: #ffffff;
+}
+/* evet hover effect */
+.schedule_container .schedule_info :nth-child(even):hover{
+    border-top: 5px solid #1d4fd8 ;
+    border-left: 20px solid #1d4fd8 ;
+}
+
+
+
+
+/* schedule end */
 
 
 
