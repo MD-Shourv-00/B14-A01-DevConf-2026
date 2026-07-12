@@ -9,7 +9,10 @@
     box-sizing: border-box;
     font-family: "inter";
 }
-
+/* for hiding scroll bar in bottom */
+body{
+    overflow-x: hidden;
+}
 /* common button start */
 .common_btn{
     color: white;
